@@ -1,0 +1,91 @@
+* {
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--Darkcyan) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 25px;
+    overflow: hidden;
+    background-image: url(../images/bg-pattern-top.svg) , url(../images/bg-pattern-bottom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 40vw bottom 40vh , left 45vw top 44vh;
+}
+.container {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 999;
+}
+@media (max-width:768px) {
+    .container {
+        max-width: 330px;
+    }
+}
+.container .middle {
+    border-bottom: 2px solid #eee ;
+}
+.container .middle .avatar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -130px ;
+}
+.container .middle .avatar img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.container .name {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--Verydarkdesaturatedblue);
+}
+.container .name span {
+    color: var(--Darkgrayishblue);
+    font-weight: 400;
+    margin-left: 5px;
+}
+.container .city {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--Darkgrayishblue);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.container .details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container .details .num {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: var(--Verydarkdesaturatedblue);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.container .details .details-1 {
+    color: var(--Darkgray);
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    text-align: center;
+}
+    
